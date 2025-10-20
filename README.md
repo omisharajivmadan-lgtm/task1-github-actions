@@ -50,6 +50,16 @@ This job handles the creation and publication of the final deployment artifact.
     * **Build:** Executes a multi-stage Docker build using the provided `Dockerfile`. This process creates a small, production-ready image.
     * **Push:** Publishes the resulting image to DockerHub. The image is tagged with the unique Git **Commit SHA** for immutable version traceability and rollback capability.
 
+## 🟢 Pipeline Execution Proof (Visual Evidence)
+
+The successful completion of the workflow validates the entire automated process, from testing to secure deployment.
+
+### Successful Workflow Run
+![Successful GitHub Actions Workflow Run](assets/success-pipeline.png) 
+
+### Artifact Traceability Proof
+![DockerHub Image Tagged with Commit SHA](assets/dockerhub-proof.png)
+
 ## Security and Professional Standards
 
 ### Secure Credential Management
