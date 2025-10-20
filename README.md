@@ -94,11 +94,15 @@ To run the final container and verify the deployed Node.js application is workin
 
 1.  **Pull the Image:** Pull the latest successful image from DockerHub.
     ```bash
-    docker pull DOCKERHUB_USERNAME/task1-node-app:latest
+    docker pull DOCKERHUB_USERNAME/task1-node-app:<COMMIT_SHA>
     ```
 2.  **Run the Container:** Run the container, mapping the internal port 3000 (exposed in the `Dockerfile`) to an external host port 8080.
     ```bash
-    docker run -d -p 8080:3000 --name task1_app DOCKERHUB_USERNAME/task1-node-app:latest
+    docker run -d -p 8080:3000 --name task1_app DOCKERHUB_USERNAME/task1-node-app:<COMMIT_SHA>
     ```
 3.  **Verify Output:** Access the running application in a web browser: `http://localhost:8080/`
     * **Expected Result:** The browser should display the message: "Hello from the Node.js CI/CD App!"
+
+    The following image confirms the application is running as expected on the locally executed Docker container:
+
+![Local Application Verification Screenshot](assets/Output.png)
