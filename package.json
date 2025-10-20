@@ -1,0 +1,24 @@
+{
+  "name": "task1-github-actions",
+  "version": "1.0.0",
+  "description": "Automating code deployment for a Node.js app using GitHub Actions and Docker.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Running dummy test... Test successful!\" && exit 0", 
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/omisharajivmadan-lgtm/task1-github-actions.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/omisharajivmadan-lgtm/task1-github-actions/issues"
+  },
+  "homepage": "https://github.com/omisharajivmadan-lgtm/task1-github-actions#readme",
+  "dependencies": {
+    "express": "^5.1.0"
+  }
+}
